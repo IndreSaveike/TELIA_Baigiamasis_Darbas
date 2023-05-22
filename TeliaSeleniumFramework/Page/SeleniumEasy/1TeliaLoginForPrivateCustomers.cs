@@ -108,7 +108,7 @@ namespace TeliaSeleniumFramework.SeleniumEasy
             PrivateLoginButton().Click();
             shortWait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("a[href*='/mano/privatiems/sso']")));
             PasswordLoginOption().Click();
-            shortWait.Until(ExpectedConditions.UrlContains("https://www.telia.lt/mano/privatiems/sso/prisijungti-el-pastu"));
+            longWait.Until(ExpectedConditions.UrlContains("https://www.telia.lt/mano/privatiems/sso/prisijungti-el-pastu"));
             EmailInput().SendKeys(email);
             PasswordInput().SendKeys(password);
             SubmitButton().Click();
