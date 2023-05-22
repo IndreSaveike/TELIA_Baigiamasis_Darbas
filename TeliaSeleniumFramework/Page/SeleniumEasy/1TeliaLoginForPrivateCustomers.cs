@@ -54,7 +54,8 @@ namespace TeliaSeleniumFramework.SeleniumEasy
 
         public IWebElement ErrorMessage()
         {
-            return shortWait.Until(ExpectedConditions.ElementExists(By.XPath("//span[@slot='heading']/following-sibling::telia-p[@slot='content']")));
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            return wait.Until(ExpectedConditions.ElementExists(By.XPath("//span[@slot='heading']/following-sibling::telia-p[@slot='content']")));
         }
 
         public bool IsErrorMessageDisplayed()
