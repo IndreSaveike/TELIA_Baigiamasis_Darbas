@@ -75,7 +75,7 @@
  
   # Test Scenario 2: Product Buy Flow.
   
-  ## Test Case 2.1: Verify that the user can add a product to the cart.
+  ## Test Case 2.1: Verify that the user can order the product.
   
   ## Pre-condition: 
    -  Ensure that the user has opened the page: [https://www.telia.lt/privatiems].
